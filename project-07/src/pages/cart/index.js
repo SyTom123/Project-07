@@ -47,7 +47,7 @@ function Cart() {
       duration: 3,
     });
   };
-  
+
   return (
     <>
       {contextHolder}
@@ -62,10 +62,10 @@ function Cart() {
               <table>
                 <thead>
                   <tr>
-                    <th>No</th>
+                    <th className="cart__reponsive">No</th>
                     <th>Title</th>
-                    <th>Image</th>
-                    <th>UnitPrice</th>
+                    <th className="cart__reponsive">Image</th>
+                    <th className="cart__reponsive">UnitPrice</th>
                     <th>Quantity</th>
                     <th>Total Price</th>
                     <th>Actions</th>
@@ -73,26 +73,32 @@ function Cart() {
                 </thead>
                 <tbody>
                   {cart.map((item, index) => (
-                    <tr key={index}>
-                      <td>{index + 1}</td>
+                    <tr key={index} >
+
+                      <td className="cart__reponsive">
+                        <div>
+                          {index + 1}
+                        </div>
+                      </td>
                       <td>
                         <div className="cart__title">
                           {ProperName(item.value[0].title)}
                         </div>
                       </td>
-                      <td>
+
+                      <td className="cart__reponsive">
                         <div className="cart__imageBox">
                           <div className="cart__image">
                             <img src={item.value[0].thumbnail} alt="" />
                           </div>
                         </div>
                       </td>
-                      <td>
+                      <td className="cart__reponsive">
                         <div className="cart__price">
                           $ {newPrice(item.value[0])}
                         </div>
                       </td>
-                      <td>
+                      <td className="cart__quantityReponsive">
                         <div className="cart__quantity">
                           <span
                             onClick={() =>
@@ -116,12 +122,15 @@ function Cart() {
                           onConfirm={() => handleClick(item, item.value[0].id)}
                         >
                           <div className="cart__button">
-                          <Tooltip placement="bottom" title={"Delete product"}>
-                            <Button
-                              type="primary"
-                              danger
-                              icon={<DeleteOutlined />}
-                            ></Button>
+                            <Tooltip
+                              placement="bottom"
+                              title={"Delete product"}
+                            >
+                              <Button
+                                type="primary"
+                                danger
+                                icon={<DeleteOutlined />}
+                              ></Button>
                             </Tooltip>
                           </div>
                         </Popconfirm>
@@ -137,10 +146,13 @@ function Cart() {
                     onConfirm={() => handleDeleteAll()}
                   >
                     <div className="cart__clearAll">
-                    <Tooltip placement="bottom" title={"Delete all product in your cart"}>
-                      <Button type="primary" danger>
-                        Clear Cart
-                      </Button>
+                      <Tooltip
+                        placement="bottom"
+                        title={"Delete all product in your cart"}
+                      >
+                        <Button type="primary" danger>
+                          Clear Cart
+                        </Button>
                       </Tooltip>
                     </div>
                   </Popconfirm>

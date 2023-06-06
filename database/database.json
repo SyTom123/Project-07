@@ -1838,22 +1838,6 @@
         "https://i.dummyjson.com/data/products/100/3.jpg",
         "https://i.dummyjson.com/data/products/100/thumbnail.jpg"
       ]
-    },
-    {
-      "title": "quan nu",
-      "price": "900",
-      "discountPercentage": "5",
-      "stock": "10",
-      "brand": "May 10",
-      "category": "womens-dresses",
-      "thumbnail": "https://dony.vn/wp-content/uploads/2021/07/quan-baggy-nu-5.jpg",
-      "description": "Mo ta",
-      "rating": 0,
-      "images": [
-        "https://bizweb.dktcdn.net/thumb/large/100/438/408/products/qjn4026-xnh-1.jpg?v=1675313475910",
-        "https://pos.nvncdn.net/f06edc-11055/ps/20191106_rNFZB8yuKGs3mOO40e5LUNm4.jpg"
-      ],
-      "id": 101
     }
   ],
   "categories": [
@@ -1913,7 +1897,7 @@
   "admin": [
     {
       "email": "admin@gmail.com",
-      "password": "654321",
+      "password": "123456",
       "phone": "",
       "token": "TyazCggodVW6OM0sAkkr",
       "id": 1
@@ -2017,6 +2001,18 @@
       "createAt": "06-06-2023 08:36:48",
       "status": "onGoing",
       "id": 16
+    },
+    {
+      "userID": "1",
+      "products": [
+        {
+          "productID": 61,
+          "quantity": 1
+        }
+      ],
+      "createAt": "06-06-2023 11:34:15",
+      "status": "onGoing",
+      "id": 17
     }
   ]
 }

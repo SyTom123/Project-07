@@ -154,7 +154,7 @@ function SingleProduct() {
                       <Button
                         icon={<ShoppingCartOutlined />}
                         type="primary"
-                        style={{ marginRight: "10px" }}
+                        style={{ marginRight: "10px", marginBottom: "10px" }}
                         onClick={() => handleClick(product[0].id, product)}
                       >
                         Add To chart

@@ -118,10 +118,10 @@ function UserPurchase() {
                 <table>
                   <thead>
                     <tr>
-                      <th>No.</th>
+                      <th className="userPurchase__reponsive">No.</th>
                       {tokenAdmin && <th>User ID</th>}
                       <th>Product</th>
-                      <th>Quantiy</th>
+                      <th className="userPurchase__reponsive">Quantiy</th>
                       <th>Total</th>
                       <th>Date</th>
                       <th>Status</th>
@@ -131,7 +131,7 @@ function UserPurchase() {
                   <tbody>
                     {purchaseData.map((item, index) => (
                       <tr key={index}>
-                        <td>{index + 1}</td>
+                        <td className="userPurchase__reponsive">{index + 1}</td>
                         {tokenAdmin && <td>{item.userID}</td>}
                         <td>
                           {item.products.map((pro, i) => (
@@ -140,7 +140,7 @@ function UserPurchase() {
                             </p>
                           ))}
                         </td>
-                        <td>
+                        <td className="userPurchase__reponsive">
                           {item.products.map((pro, i) => (
                             <p key={`${pro.product[0].id}-${pro.quantity}`}>
                               {pro.quantity}

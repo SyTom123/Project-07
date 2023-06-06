@@ -1,4 +1,3 @@
-import Container from "../../container";
 import "./header.scss";
 import Sibar from "./sibar";
 import HeaderMain from "./headerMain";
@@ -8,11 +7,9 @@ function HeaderDefault() {
   return (
     <>
       <div className="headerDefault">
-        <Container>
           <HeaderNav />
           <HeaderMain />
-        </Container>
-        <Sibar />
+          <Sibar />
       </div>
     </>
   );

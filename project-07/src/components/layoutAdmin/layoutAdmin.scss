@@ -55,8 +55,34 @@
             width: 100%;
         }
     }
+    &__button {
+        display: flex;
+        
+    }
+    &__buttonHome--responsive{
+        display: none;
+    }
+    &__buttonLogout--responsive{
+        display: none;
+    }
+
     &__icons {
         margin-left: 15px;
         flex: 1;
+    }
+    @media (max-width: 575.98px){
+        &__buttonHome{
+            display: none;
+        }
+        &__buttonLogout{
+            display: none;
+        }
+        &__buttonLogout--responsive{
+            display: block;
+        }
+        &__buttonHome--responsive{
+            display: block;
+        }
+      
     }
 }

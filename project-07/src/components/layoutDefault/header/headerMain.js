@@ -79,6 +79,7 @@ function HeaderMain() {
           )}
         </div>
       </div>
+      
       <div className="headerDefault__cart">
         <MiniCart />
       </div>

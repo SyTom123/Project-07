@@ -1,7 +1,7 @@
 .headerDefault {
   background: #f95030;
   height: auto;
-  padding: 8px;
+  padding: 8px 60px;
   color: #fff;
 
   ul {
@@ -211,4 +211,31 @@
       color: yellow;
     }
   }
+  @media (max-width: 767.98px){
+    &__tag{
+        display: none;
+    }
+  }
+  
+}
+@media (max-width: 575.98px){
+ .headerDefault {
+  padding: 8px 20px;
+  &__search{
+    display: none;
+  }
+  &__middle {
+    margin: 0;
+  }
+  &__right {
+    margin-left: auto;
+  }
+
+  &__left {
+    display: none;
+  }
+ }
+
+ 
+
 }

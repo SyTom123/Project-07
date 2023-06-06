@@ -55,6 +55,7 @@ function Header(props) {
             ></Button>
           </div>
           <div className="headerAdmin__button">
+            <div className="headerAdmin__buttonHome">
             <Link to="/">
               <Button
                 icon={<HomeOutlined />}
@@ -64,6 +65,18 @@ function Header(props) {
                 Home Page
               </Button>
             </Link>
+            </div>
+            <div className="headerAdmin__buttonHome--responsive">
+            <Link to="/">
+              <Button
+                icon={<HomeOutlined />}
+                type="primary"
+                style={{ fontWeight: "500" }}
+              >
+               
+              </Button>
+            </Link>
+            </div>
             <LogoutAdmin />
           </div>
         </header>

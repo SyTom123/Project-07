@@ -12,6 +12,7 @@ function LogoutAdmin() {
   };
   return (
     <>
+    <div className="headerAdmin__buttonLogout">
       <Button
         onClick={handleClick}
         icon={<LogoutOutlined />}
@@ -19,6 +20,15 @@ function LogoutAdmin() {
       >
         Logout 
       </Button>
+    </div>
+      <div className="headerAdmin__buttonLogout--responsive">
+      <Button
+        onClick={handleClick}
+        icon={<LogoutOutlined />}
+        style ={{fontWeight: "500", marginLeft: "10px"}}
+      >
+      </Button>
+    </div>
     </>
   );
 }

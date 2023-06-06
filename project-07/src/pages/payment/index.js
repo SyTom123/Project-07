@@ -147,13 +147,13 @@ function Payment() {
                         </Form.Item>
                       </Col>
 
-                      <Col xxl={16} xl={16} lg={16} md={16} sm={24} sx={24}>
+                      <Col xxl={16} xl={16} lg={24} md={24} sm={24} sx={24}>
                         <Form.Item name="email" rules={rules}>
                           <Input placeholder="Email" type={"email"} />
                         </Form.Item>
                       </Col>
 
-                      <Col xxl={8} xl={8} lg={8} md={8} sm={24} sx={24}>
+                      <Col xxl={8} xl={8} lg={24} md={24} sm={24} sx={24}>
                         <Form.Item name="phone" rules={rules}>
                           <Input placeholder="Phone number" />
                         </Form.Item>
