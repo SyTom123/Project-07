@@ -1,4 +1,4 @@
-import { Button, notification, Popconfirm } from "antd";
+import { Button, notification, Popconfirm, Tooltip } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import Container from "../../components/container";
 import newPrice from "../../components/newPrice";
@@ -116,11 +116,13 @@ function Cart() {
                           onConfirm={() => handleClick(item, item.value[0].id)}
                         >
                           <div className="cart__button">
+                          <Tooltip placement="bottom" title={"Delete product"}>
                             <Button
                               type="primary"
                               danger
                               icon={<DeleteOutlined />}
                             ></Button>
+                            </Tooltip>
                           </div>
                         </Popconfirm>
                       </td>
@@ -135,9 +137,11 @@ function Cart() {
                     onConfirm={() => handleDeleteAll()}
                   >
                     <div className="cart__clearAll">
+                    <Tooltip placement="bottom" title={"Delete all product in your cart"}>
                       <Button type="primary" danger>
                         Clear Cart
                       </Button>
+                      </Tooltip>
                     </div>
                   </Popconfirm>
                   <div className="cart__money">

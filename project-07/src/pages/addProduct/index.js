@@ -10,6 +10,12 @@ function AddProduct() {
   const [optionsCategory, setOptionsCategory] = useState([]);
   const [form] =Form.useForm();
   const [api, contextHolder] = notification.useNotification();
+  const rules = [
+    {
+      required: true,
+      message: "Required",
+    },
+  ];
 
   useEffect(() => {
     const getApi = async () => {
@@ -29,12 +35,6 @@ function AddProduct() {
     getApi();
   }, []);
 
-  const rules = [
-    {
-      required: true,
-      message: "Required",
-    },
-  ];
   const handleFinsh = async (values) => {
     values.rating = 0;
     let image = [];
@@ -47,7 +47,7 @@ function AddProduct() {
     }
     values.images = image;
     const result = await createProduct(values);
-    console.log(result);
+    
     if (result) {
       form.resetFields();
       api.success({

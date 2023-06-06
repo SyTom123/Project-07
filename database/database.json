@@ -1840,34 +1840,20 @@
       ]
     },
     {
-      "title": "Iphone",
-      "price": "950",
-      "discountPercentage": "8",
-      "stock": "20",
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://www.techone.vn/wp-content/uploads/2019/12/do-500x500.jpg",
-      "description": "mua ngay di ban oi troi oi dep lam day",
-      "rating": 0,
-      "images": [
-        "https://www.techone.vn/wp-content/uploads/2019/12/vang-500x500.jpg",
-        "https://www.techone.vn/wp-content/uploads/2019/12/den-500x500.jpg",
-        "https://www.techone.vn/wp-content/uploads/2019/12/tim-500x500.jpg"
-      ],
-      "id": 101
-    },
-    {
-      "title": "quan nam",
-      "price": "1000",
+      "title": "quan nu",
+      "price": "900",
       "discountPercentage": "5",
       "stock": "10",
       "brand": "May 10",
-      "category": "mens-shirts",
-      "thumbnail": "https://modaviet.vn/image/cache/catalog/sanpham/dong-phuc-cong-so/dong-phuc-quan-au/dong-phuc-quan-au-33-580x775h.jpg",
-      "description": "mo ta",
+      "category": "womens-dresses",
+      "thumbnail": "https://dony.vn/wp-content/uploads/2021/07/quan-baggy-nu-5.jpg",
+      "description": "Mo ta",
       "rating": 0,
-      "images": [],
-      "id": 102
+      "images": [
+        "https://bizweb.dktcdn.net/thumb/large/100/438/408/products/qjn4026-xnh-1.jpg?v=1675313475910",
+        "https://pos.nvncdn.net/f06edc-11055/ps/20191106_rNFZB8yuKGs3mOO40e5LUNm4.jpg"
+      ],
+      "id": 101
     }
   ],
   "categories": [
@@ -1927,7 +1913,7 @@
   "admin": [
     {
       "email": "admin@gmail.com",
-      "password": "123456",
+      "password": "654321",
       "phone": "",
       "token": "TyazCggodVW6OM0sAkkr",
       "id": 1
@@ -1950,59 +1936,6 @@
   "payment": [
     {
       "userID": "1",
-      "note": "",
-      "products": [
-        {
-          "productID": 1,
-          "quantity": 2
-        },
-        {
-          "productID": 2,
-          "quantity": 3
-        }
-      ],
-      "createAt": "30-05-2023 14:10:23",
-      "status": "completed",
-      "id": 1
-    },
-    {
-      "userID": "3",
-      "products": [
-        {
-          "productID": 17,
-          "quantity": 2
-        },
-        {
-          "productID": 82,
-          "quantity": 3
-        },
-        {
-          "productID": 89,
-          "quantity": 2
-        }
-      ],
-      "createAt": "31-5-2023 17:19:20",
-      "status": "onGoing",
-      "id": 2
-    },
-    {
-      "userID": "1",
-      "products": [
-        {
-          "productID": 35,
-          "quantity": 2
-        },
-        {
-          "productID": 25,
-          "quantity": 1
-        }
-      ],
-      "createAt": "02-06-2023 20:42:25",
-      "status": "completed",
-      "id": 6
-    },
-    {
-      "userID": "1",
       "note": "Vui lòng giao hàng nhanh ",
       "products": [
         {
@@ -2017,35 +1950,6 @@
       "createAt": "05-06-2023 13:16:24",
       "status": "cancel",
       "id": 9
-    },
-    {
-      "userID": "2",
-      "products": [
-        {
-          "productID": 18,
-          "quantity": 3
-        },
-        {
-          "productID": 12,
-          "quantity": 2
-        }
-      ],
-      "createAt": "05-06-2023 13:43:33",
-      "status": "onGoing",
-      "id": 10
-    },
-    {
-      "userID": "2",
-      "note": "Hàng đẹp quá giao hàng đúng hẹn ạ",
-      "products": [
-        {
-          "productID": 102,
-          "quantity": 1
-        }
-      ],
-      "createAt": "05-06-2023 14:11:17",
-      "status": "onGoing",
-      "id": 12
     },
     {
       "userID": "2",
@@ -2083,19 +1987,36 @@
     },
     {
       "userID": "2",
+      "note": "hang dep qua",
       "products": [
         {
-          "productID": 26,
-          "quantity": 1
+          "productID": 44,
+          "quantity": 2
         },
         {
-          "productID": 37,
+          "productID": 17,
           "quantity": 1
         }
       ],
-      "createAt": "05-06-2023 17:33:47",
+      "createAt": "06-06-2023 08:33:11",
       "status": "onGoing",
       "id": 15
+    },
+    {
+      "userID": "3",
+      "products": [
+        {
+          "productID": 57,
+          "quantity": 2
+        },
+        {
+          "productID": 2,
+          "quantity": 1
+        }
+      ],
+      "createAt": "06-06-2023 08:36:48",
+      "status": "onGoing",
+      "id": 16
     }
   ]
 }

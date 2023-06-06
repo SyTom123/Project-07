@@ -59,6 +59,7 @@ function InventoryEdit(props) {
     const getApi = async () => {};
     getApi();
   }, []);
+  
   const handleFinish = async (values) => {
     const result = await editProduct(record.id, values);
 
