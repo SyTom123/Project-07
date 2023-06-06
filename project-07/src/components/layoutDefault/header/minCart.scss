@@ -1,0 +1,63 @@
+.miniCart {
+    &__dropdown {
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        overflow: scroll;
+        max-width: 400px;
+        min-height: 300px;
+        position: fixed;
+        &::-webkit-scrollbar {
+            display: none; 
+        }
+        max-width: 350px !important;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ddd;
+        flex-wrap: wrap;
+        gap:10px;
+        padding: 10px 
+    }
+    &__image {
+        width: 40px ; 
+        height: 40px;
+        object-fit: cover;
+        img {
+            width: 100%;
+            aspect-ratio: 1/1;
+        }
+    }
+    &__title {
+        font-weight: 500;
+    }
+    &__price {
+        color: #F95030;
+        font-weight: 500;
+    }
+    &__head {
+        text-align: center;
+        padding: 15px;
+        background: #F95030 !important;
+        color: #fff;
+        font-weight: 600;
+        border: 1px solid #ddd;
+        font-size: 16px;
+    }
+    &__body {
+        background: #fff;
+        ul {
+            box-shadow: none !important;
+        }
+        li {
+            padding: 0 12px !important;
+        }
+    }
+    &__button {
+        margin: 0px auto 20px;
+        padding: 20px;
+        float: right;
+    }
+    
+}

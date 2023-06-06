@@ -1,0 +1,113 @@
+.about {
+    p {
+        color: #797b7c;
+        font-size: 17px;
+        line-height: 26px;
+    }
+    &__banner {
+        width: 75vw;
+        object-fit: cover;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        img {
+            width: 100%;
+        }
+    }
+    &__body {
+        text-align: center;
+        >p {
+            padding: 0 80px;
+        }
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-size: 28px;
+        max-width: 75vw;
+        margin: 0 auto 40px;
+    }
+    &__goal {
+        margin-top: 60px;
+        display: flex !important;
+       
+        h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    &__box {
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 20px;
+        height: 100%;
+        border-radius: 15px;
+    }
+    &__people {
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 30px;
+        margin-top: 40px;
+        h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+
+        }
+ 
+    }
+    &__peopleWrap {
+        margin-top: 30px;
+    }
+    &__peopleBox {
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+    &__peopleImg {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+        }
+    }
+    &__value {
+        margin-top: 50px;
+        h2 {
+            margin-bottom: 40px;
+        }
+    }
+    &__valueImg {
+        width: 100%;
+        height: 624px;
+        background: url(../../assess/image/value1.png) 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:0 -380px  ;
+    }
+    &__office {
+        margin-top: 50px;
+        cursor: pointer;
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
+    &__officeItem {
+        width: 100%;
+        p {
+            margin-top: 10px;
+        }
+       
+    }
+    &__officeImg {
+        img {
+            height: 100%;
+            &:hover p {
+                color: #F95030;
+            }
+        }
+        
+    }
+    
+   
+
+}

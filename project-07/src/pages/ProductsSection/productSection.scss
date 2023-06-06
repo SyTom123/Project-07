@@ -1,0 +1,14 @@
+.productsSection {
+    &__pagination {
+        margin-top: 20px;
+        float: right;
+        input {
+            width: 32px;
+            height: 32px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            text-align: center;
+            margin: 0 10px;
+        }
+    }
+}

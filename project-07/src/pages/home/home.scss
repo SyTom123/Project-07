@@ -1,0 +1,86 @@
+
+.products {
+  margin-top: 30px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+  &__item {
+    margin-bottom: 10px;
+    &:hover img{
+        scale: 1.1;
+    }
+  }
+  &__box {
+    background: #fff;
+    text-align: center;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        border-bottom: 0.5px solid #0000000f;
+        transition: all 2s ease;
+    }
+  }
+  &__sale {
+    position: absolute;
+    display: inline-block;
+    background-color: #F95030;
+    top: 10px;
+    right: 10px;
+    color: yellow;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 2px;
+
+  }
+    &__brand {
+        padding: 10px;
+        border-bottom: 1px solid #0000000f;
+        margin:0 15px;
+        font-size: 14px;
+    }
+    &__title {
+        padding: 10px;
+        margin:0 15px;
+        font-size: 15px;
+        color:#F95030;
+        font-weight: 600;
+    }
+    &__price {
+        span {
+            margin: 4px;
+            &:first-child {
+                text-decoration: line-through;
+                text-decoration-thickness: 0.5px;
+                color: #0000008A;
+            }
+            &:nth-child(2) {
+                font-size: 16px;
+            }
+           
+        }
+
+    }
+    &__hr {
+        height: 2px;
+        width: 5vw;
+        background: #F95030;
+        top: 20px;
+        margin-top: 15px;
+        display: inline-block;
+    }
+
+}

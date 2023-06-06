@@ -1,0 +1,18 @@
+.miniUser {
+    &__avatarImg {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 5px;
+        background: #F95030;
+        color: #fff;
+        Image {
+            width: 100%;
+            aspect-ratio: 1/1;
+            height: auto;
+            object-fit: cover !important;
+            vertical-align: middle;
+        }
+    }
+}

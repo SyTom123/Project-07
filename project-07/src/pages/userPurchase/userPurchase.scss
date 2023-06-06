@@ -1,0 +1,21 @@
+.userPurchase {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        th, td {
+            border: 1px solid #ddd;
+            padding: 5px;
+            text-align: center;
+
+        }
+        th {
+            background-color:#F95030 ;
+            color: #fff;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+    }
+    
+}

@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.products__header {
+  background: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #938f93;
+  font-size: 15px;
+  margin-bottom: 30px;
+  border-left: 5px solid #F95030;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    text-transform: uppercase
+  }
+}
+   
